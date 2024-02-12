@@ -1,0 +1,514 @@
+.floating-btn {
+    position: fixed;
+    bottom: 20px; 
+    right: 35px;
+    background-color: #0206426c; 
+    color: #fff; 
+    padding: 10px 20px;
+    border:#08477a solid 2px;
+    border-radius: 25px;
+    text-decoration: none; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+    z-index: 999; 
+  }
+  floating-btn:hover  .floating-btn{
+    background-color: #000000; 
+    color: #8b8ccc;
+  }
+ @media  (max-width: 576px){
+    html{
+        background-color: hsl(230, 92%, 5%);
+    }
+    body{
+    
+        background-color: hsl(230, 92%, 5%);
+        
+      }
+    
+    .glassc3 {
+    
+      transform-style: preserve-3d;
+      position: absolute;
+      inset: 8px;
+      border-radius: 55px;
+      border-top-right-radius: 65%;
+      background: linear-gradient(0deg, rgba(2, 9, 75, 0.795) 0%, rgba(0, 15, 155, 0.815) 100%);
+      transform: translate3d(0px, 0px, 25px);
+      border-left: 3px solid white;
+      border-bottom: 3px solid white;
+      transition: all 0.5s ease-in-out;
+    
+    }
+    
+    .contentc3 {
+    
+      padding: 100px 60px 0px 30px;
+      transform: translate3d(25px, 25px, 26px);
+    
+    }
+    
+    .contentc3 .titlec3 {
+      display: block;
+      color: #b5b1ee;
+      font-weight: 999;
+      font-size: 35px;
+    }
+    .contentc3 .textc3 {
+      display: block;
+      color: rgba(242, 242, 245, 0.765);
+      font-size: 18px;
+    font-weight: 300;
+      margin-top: 20px;
+    }
+    .bottomc3 {
+      padding: 10px 12px;
+      transform-style: preserve-3d;
+      position: absolute;
+      bottom: 25px;
+      left: 20px;
+      right: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      transform: translate3d(0, 0, 26px);
+    }
+    
+    .bottomc3 .social-buttons-container {
+    
+      display: flex;
+      gap: 10px;
+      transform-style: preserve-3d;
+    }
+    
+    .bottomc3 .social-buttons-container .social-button {
+      width: 30px;
+      aspect-ratio: 1;
+      padding: 5px;
+      background: rgb(0, 0, 0);
+      border-radius: 50%;
+      border: rgb(4, 11, 107) solid 2px;
+      display: grid;
+      place-content: center;
+      box-shadow: rgba(13, 86, 221, 0.5) 5px 7px 5px 5px;
+    }
+    
+    .bottomc3 .social-buttons-container .social-button:first-child {
+      transition: transform 0.2s ease-in-out 0.4s, box-shadow 0.2s ease-in-out 0.4s;
+    }
+    
+    .bottomc3 .social-buttons-container .social-button:nth-child(2) {
+      transition: transform 0.2s ease-in-out 0.8s, box-shadow 0.2s ease-in-out 0.6s;
+    
+    }
+    
+    .bottomc3 .social-buttons-container .social-button:nth-child(3) {
+    
+      transition: transform 0.2s ease-in-out 0.12s, box-shadow 0.2s ease-in-out 0.8s;
+    
+    }
+    
+    .bottomc3 .social-buttons-container .social-button .svgc3 {
+    
+      width: 15px;
+    
+      fill: #8b8ccc;
+    
+    }
+    
+    .bottomc3 .social-buttons-container .social-button:hover {
+    
+      background: rgb(235, 236, 245);
+      box-shadow: rgba(0, 0, 0, 0.5) 5px 7px 5px 5px;
+    
+    }
+    
+    .bottomc3 .social-buttons-container .social-button:hover .svgc3 {
+    
+      fill: rgb(21, 14, 112);
+      
+      box-shadow: rgba(0, 0, 0, 0.5) 5px 7px 5px 5px;
+    
+    }
+    
+    .bottomc3 .social-buttons-container .social-button:active {
+    
+      background: rgb(1, 154, 255);
+    
+    }
+    
+    .bottomc3 .social-buttons-container .social-button:active .svgc3 {
+    
+      fill: black;
+    
+    }
+    
+    .logoc3 {
+    
+      position: absolute;
+    
+      right: 25px;
+    
+      top: 25px;
+    
+      transform-style: preserve-3d;
+    
+    }
+    
+    .logoc3 .circle {
+    
+      display: block;
+      position: absolute;
+      aspect-ratio: 1;
+      border-radius: 50%;
+      right: 25px;
+      top: 25px;
+      box-shadow: rgba(100, 100, 111, 0.2) -10px 10px 20px 0px;
+    
+      -webkit-backdrop-filter: blur(5px);
+    
+      backdrop-filter: blur(5px);
+    
+      background: rgba(9, 238, 196, 0.2);
+    
+      transition: all 0.5s ease-in-out;
+    
+    }
+    .circle5{
+      padding: 9px;
+      font-size: 2rem;
+    }
+      
+ }
+  @media   (min-width: 577px) and (max-width: 992px){
+    body{
+    
+        background-image: url(./bg_image.png);
+        background-size:102% ;
+        margin-left: 0px;
+        background-position: 0px 0px;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        
+      }
+    
+    .glassc3 {
+    
+      transform-style: preserve-3d;
+      position: absolute;
+      inset: 8px;
+      border-radius: 55px;
+      border-top-right-radius: 65%;
+      background: linear-gradient(0deg, rgba(2, 9, 75, 0.795) 0%, rgba(0, 15, 155, 0.815) 100%);
+      transform: translate3d(0px, 0px, 25px);
+      border-left: 3px solid white;
+      border-bottom: 3px solid white;
+      transition: all 0.5s ease-in-out;
+    
+    }
+    
+    .contentc3 {
+    
+      padding: 100px 60px 0px 30px;
+      transform: translate3d(25px, 25px, 26px);
+    
+    }
+    
+    .contentc3 .titlec3 {
+      display: block;
+      color: #b5b1ee;
+      font-weight: 999;
+      font-size: 35px;
+    }
+    .contentc3 .textc3 {
+      display: block;
+      color: rgba(242, 242, 245, 0.765);
+      font-size: 18px;
+    font-weight: 300;
+      margin-top: 20px;
+    }
+    .bottomc3 {
+      padding: 10px 12px;
+      transform-style: preserve-3d;
+      position: absolute;
+      bottom: 25px;
+      left: 20px;
+      right: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      transform: translate3d(0, 0, 26px);
+    }
+    
+    .bottomc3 .social-buttons-container {
+    
+      display: flex;
+      gap: 10px;
+      transform-style: preserve-3d;
+    }
+    
+    .bottomc3 .social-buttons-container .social-button {
+      width: 30px;
+      aspect-ratio: 1;
+      padding: 5px;
+      background: rgb(0, 0, 0);
+      border-radius: 50%;
+      border: rgb(4, 11, 107) solid 2px;
+      display: grid;
+      place-content: center;
+      box-shadow: rgba(13, 86, 221, 0.5) 5px 7px 5px 5px;
+    }
+    
+    .bottomc3 .social-buttons-container .social-button:first-child {
+      transition: transform 0.2s ease-in-out 0.4s, box-shadow 0.2s ease-in-out 0.4s;
+    }
+    
+    .bottomc3 .social-buttons-container .social-button:nth-child(2) {
+      transition: transform 0.2s ease-in-out 0.8s, box-shadow 0.2s ease-in-out 0.6s;
+    
+    }
+    
+    .bottomc3 .social-buttons-container .social-button:nth-child(3) {
+    
+      transition: transform 0.2s ease-in-out 0.12s, box-shadow 0.2s ease-in-out 0.8s;
+    
+    }
+    
+    .bottomc3 .social-buttons-container .social-button .svgc3 {
+    
+      width: 15px;
+    
+      fill: #8b8ccc;
+    
+    }
+    
+    .bottomc3 .social-buttons-container .social-button:hover {
+    
+      background: rgb(235, 236, 245);
+      box-shadow: rgba(0, 0, 0, 0.5) 5px 7px 5px 5px;
+    
+    }
+    
+    .bottomc3 .social-buttons-container .social-button:hover .svgc3 {
+    
+      fill: rgb(21, 14, 112);
+      
+      box-shadow: rgba(0, 0, 0, 0.5) 5px 7px 5px 5px;
+    
+    }
+    
+    .bottomc3 .social-buttons-container .social-button:active {
+    
+      background: rgb(1, 154, 255);
+    
+    }
+    
+    .bottomc3 .social-buttons-container .social-button:active .svgc3 {
+    
+      fill: black;
+    
+    }
+    
+    .logoc3 {
+    
+      position: absolute;
+    
+      right: 25px;
+    
+      top: 25px;
+    
+      transform-style: preserve-3d;
+    
+    }
+    
+    .logoc3 .circle {
+    
+      display: block;
+      position: absolute;
+      aspect-ratio: 1;
+      border-radius: 50%;
+      right: 25px;
+      top: 25px;
+      box-shadow: rgba(100, 100, 111, 0.2) -10px 10px 20px 0px;
+    
+      -webkit-backdrop-filter: blur(5px);
+    
+      backdrop-filter: blur(5px);
+    
+      background: rgba(9, 238, 196, 0.2);
+    
+      transition: all 0.5s ease-in-out;
+    
+    }
+    .circle5{
+      padding: 9px;
+      font-size: 2rem;
+    }
+      
+  }
+  @media   (min-width: 993px) {
+    body{
+    
+      background-image: url(./bg_image.png);
+      background-size:102% ;
+      margin-left: 0px;
+      background-position: 0px 0px;
+      background-repeat: no-repeat;
+      background-attachment: scroll;
+      
+    }
+  
+  .glassc3 {
+  
+    transform-style: preserve-3d;
+    position: absolute;
+    inset: 8px;
+    border-radius: 55px;
+    border-top-right-radius: 100%;
+    background: linear-gradient(0deg, rgba(2, 9, 75, 0.795) 0%, rgba(0, 15, 155, 0.815) 100%);
+    transform: translate3d(0px, 0px, 25px);
+    border-left: 3px solid white;
+    border-bottom: 3px solid white;
+    transition: all 0.5s ease-in-out;
+  
+  }
+  
+  .contentc3 {
+  
+    padding: 100px 60px 0px 30px;
+    transform: translate3d(25px, 25px, 26px);
+  
+  }
+  
+  .contentc3 .titlec3 {
+    display: block;
+    color: #b5b1ee;
+    font-weight: 999;
+    font-size: 35px;
+  }
+  .contentc3 .textc3 {
+    display: block;
+    color: rgba(242, 242, 245, 0.765);
+    font-size: 18px;
+  font-weight: 300;
+    margin-top: 20px;
+  }
+  .bottomc3 {
+    padding: 10px 12px;
+    transform-style: preserve-3d;
+    position: absolute;
+    bottom: 25px;
+    left: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transform: translate3d(0, 0, 26px);
+  }
+  
+  .bottomc3 .social-buttons-container {
+  
+    display: flex;
+    gap: 10px;
+    transform-style: preserve-3d;
+  }
+  
+  .bottomc3 .social-buttons-container .social-button {
+    width: 30px;
+    aspect-ratio: 1;
+    padding: 5px;
+    background: rgb(0, 0, 0);
+    border-radius: 50%;
+    border: rgb(4, 11, 107) solid 2px;
+    display: grid;
+    place-content: center;
+    box-shadow: rgba(13, 86, 221, 0.5) 5px 7px 5px 5px;
+  }
+  
+  .bottomc3 .social-buttons-container .social-button:first-child {
+    transition: transform 0.2s ease-in-out 0.4s, box-shadow 0.2s ease-in-out 0.4s;
+  }
+  
+  .bottomc3 .social-buttons-container .social-button:nth-child(2) {
+    transition: transform 0.2s ease-in-out 0.8s, box-shadow 0.2s ease-in-out 0.6s;
+  
+  }
+  
+  .bottomc3 .social-buttons-container .social-button:nth-child(3) {
+  
+    transition: transform 0.2s ease-in-out 0.12s, box-shadow 0.2s ease-in-out 0.8s;
+  
+  }
+  
+  .bottomc3 .social-buttons-container .social-button .svgc3 {
+  
+    width: 15px;
+  
+    fill: #8b8ccc;
+  
+  }
+  
+  .bottomc3 .social-buttons-container .social-button:hover {
+  
+    background: rgb(235, 236, 245);
+    box-shadow: rgba(0, 0, 0, 0.5) 5px 7px 5px 5px;
+  
+  }
+  
+  .bottomc3 .social-buttons-container .social-button:hover .svgc3 {
+  
+    fill: rgb(21, 14, 112);
+    
+    box-shadow: rgba(0, 0, 0, 0.5) 5px 7px 5px 5px;
+  
+  }
+  
+  .bottomc3 .social-buttons-container .social-button:active {
+  
+    background: rgb(1, 154, 255);
+  
+  }
+  
+  .bottomc3 .social-buttons-container .social-button:active .svgc3 {
+  
+    fill: black;
+  
+  }
+  
+  .logoc3 {
+  
+    position: absolute;
+  
+    right: 25px;
+  
+    top: 25px;
+  
+    transform-style: preserve-3d;
+  
+  }
+  
+  .logoc3 .circle {
+  
+    display: block;
+    position: absolute;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    right: 25px;
+    top: 25px;
+    box-shadow: rgba(100, 100, 111, 0.2) -10px 10px 20px 0px;
+  
+    -webkit-backdrop-filter: blur(5px);
+  
+    backdrop-filter: blur(5px);
+  
+    background: rgba(9, 238, 196, 0.2);
+  
+    transition: all 0.5s ease-in-out;
+  
+  }
+  .circle5{
+    padding: 9px;
+    font-size: 2rem;
+  }
+    
+  }
+  
